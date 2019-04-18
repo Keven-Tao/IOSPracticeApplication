@@ -22,6 +22,7 @@
 		5A6199692268732A00F237A6 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6199672268732A00F237A6 /* ThirdViewController.xib */; };
 		5A61996D2268734200F237A6 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A61996B2268734200F237A6 /* FourthViewController.m */; };
 		5A61996E2268734200F237A6 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A61996C2268734200F237A6 /* FourthViewController.xib */; };
+		5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6199772268883400F237A6 /* UILabel+MSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		5A61996A2268734200F237A6 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		5A61996B2268734200F237A6 /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		5A61996C2268734200F237A6 /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		5A6199762268883400F237A6 /* UILabel+MSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+MSExtension.h"; sourceTree = "<group>"; };
+		5A6199772268883400F237A6 /* UILabel+MSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		5A61993C2268261B00F237A6 /* ApplePracticeApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5A61996F2268841C00F237A6 /* 扩展 */,
 				5A61995A226872B900F237A6 /* 四个子页面 */,
 				5A6199562268521100F237A6 /* 导航栏 */,
 				5A61993D2268261B00F237A6 /* AppDelegate.h */,
@@ -122,6 +126,15 @@
 				5A61996C2268734200F237A6 /* FourthViewController.xib */,
 			);
 			path = "四个子页面";
+			sourceTree = "<group>";
+		};
+		5A61996F2268841C00F237A6 /* 扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				5A6199762268883400F237A6 /* UILabel+MSExtension.h */,
+				5A6199772268883400F237A6 /* UILabel+MSExtension.m */,
+			);
+			path = "扩展";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +215,7 @@
 				5A6199632268731400F237A6 /* SecondViewController.m in Sources */,
 				5A6199422268261B00F237A6 /* ViewController.m in Sources */,
 				5A61994D2268261C00F237A6 /* main.m in Sources */,
+				5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */,
 				5A61995E226872E600F237A6 /* FirstViewController.m in Sources */,
 				5A61993F2268261B00F237A6 /* AppDelegate.m in Sources */,
 				5A6199592268525400F237A6 /* MSNavigationController.m in Sources */,

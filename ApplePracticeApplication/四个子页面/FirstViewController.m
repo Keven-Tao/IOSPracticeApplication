@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "UILabel+MSExtension.h"
 @interface FirstViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *msLabel;
 
@@ -41,9 +41,13 @@
     self.msLabel.adjustsFontSizeToFitWidth = YES;
     
     //代码添加label
-    UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 300, 400, 100)];
-    [newLabel setText:@"我是新的label"];
+    NSString *labelContent = @"我是新的label";
+    CGFloat width = [UILabel getWidthWithTitle:labelContent font:[UIFont systemFontOfSize:20]];
+    CGFloat height = [UILabel getHeightByWidth:width title:labelContent font:[UIFont systemFontOfSize:20]];
+    UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 300, width, height)];
+    [newLabel setText:labelContent];
     [newLabel setTextColor:[UIColor orangeColor]];
+    [newLabel setFont:[UIFont systemFontOfSize:20]];
     [self.view addSubview:newLabel];
     
     /*-----------------------------------------以下作了解----------------------------------------------*/
