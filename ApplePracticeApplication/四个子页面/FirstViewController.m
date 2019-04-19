@@ -10,6 +10,8 @@
 #import "UILabel+MSExtension.h"
 @interface FirstViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *msLabel;
+@property (strong, nonatomic) IBOutlet UIButton *changeLabelBtn;
+@property (strong, nonatomic) IBOutlet UIButton *myBtn;
 
 @end
 
@@ -18,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self initBtn];
 }
 
 #pragma mark - 点击按钮改变label内容
@@ -59,5 +62,53 @@
 //    label.userInteractionEnabled = YES;
     //此属性只决定如何绘制标签。禁用的文本有些模糊，表示它不活跃。默认情况下，此属性被设置为yes。
 //    _msLabel.enabled = NO;
+}
+
+- (void)initBtn
+{
+    //1.代码创建UIButton
+    UIButton *newBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 190, 50)];
+    //2.设置按钮文字
+    [self.myBtn setTitle:@"设置了文字" forState:UIControlStateNormal];
+    [self.myBtn setTitle:@"按钮高亮" forState:UIControlStateHighlighted];
+    //3.设置按钮中文字颜色
+    [self.myBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.myBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    //4.设置按钮中的图片
+    [self.myBtn setImage:[UIImage imageNamed:@"nav_coin_icon"] forState:UIControlStateNormal];
+    [self.myBtn setImage:[UIImage imageNamed:@"nav_coin_icon_click"] forState:UIControlStateHighlighted];
+    //5.设置按钮中的背景图片
+//    [self.myBtn setBackgroundImage:[UIImage imageNamed:@"mine-sun-icon"] forState:UIControlStateNormal];
+    //6.设置按钮的背景颜色
+//    [self.myBtn setBackgroundColor:[UIColor redColor]];
+    
+    
+    /*
+     *  7.显示带属性的标题（例如下划线，或者字体多种颜色等等）
+     */
+//    NSMutableAttributedString *attriString = [[NSMutableAttributedString alloc] initWithString:@"设置了文字"];
+//    //设置局部文字颜色
+//    [attriString addAttribute:NSForegroundColorAttributeName
+//                        value:[UIColor greenColor]
+//                        range:NSMakeRange(1, 2)];
+//    //设置下划线
+//    [attriString addAttribute:NSUnderlineStyleAttributeName
+//                        value:@(NSUnderlineStyleSingle)
+//                        range:NSMakeRange(1, 2)];
+//    //设置下划线颜色...
+//    [attriString addAttribute:NSUnderlineColorAttributeName value:[UIColor redColor] range:NSMakeRange(1, 2)];
+//    [self.myBtn setAttributedTitle:attriString forState:UIControlStateNormal];//---------2
+//    attriString = nil;
+    
+    /*
+     * 8
+     * 默认情况下，当按钮高亮的情况下，图像的颜色会被画深一点，如果adjustsImageWhenHighlighted属性设置为no，那么可以去掉这个功能
+     * 一样，默认情况下，当按钮禁用的时候，图像会被画得深一点，设置adjustsImageWhenDisabled属性为NO可以取消设置
+     */
+//    self.myBtn.adjustsImageWhenHighlighted = NO;
+//    self.myBtn.adjustsImageWhenDisabled = NO;
+    
+    //9.当showsTouchWhenHighlighted设置为yes的状态下，按钮按下会发光
+//    self.myBtn.showsTouchWhenHighlighted = YES;
 }
 @end
