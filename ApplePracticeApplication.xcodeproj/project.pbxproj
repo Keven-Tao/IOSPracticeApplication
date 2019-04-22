@@ -23,6 +23,10 @@
 		5A61996D2268734200F237A6 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A61996B2268734200F237A6 /* FourthViewController.m */; };
 		5A61996E2268734200F237A6 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A61996C2268734200F237A6 /* FourthViewController.xib */; };
 		5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6199772268883400F237A6 /* UILabel+MSExtension.m */; };
+		5A762EC2226D9B1E004F6BC4 /* SampleXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A762EC1226D9B1E004F6BC4 /* SampleXib.xib */; };
+		5A762EC4226DB160004F6BC4 /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A762EC3226DB160004F6BC4 /* shops.plist */; };
+		5A762EC8226DC2AD004F6BC4 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A762EC7226DC2AD004F6BC4 /* Shop.m */; };
+		5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A762EC9226DC814004F6BC4 /* dogs.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,11 @@
 		5A61996C2268734200F237A6 /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 		5A6199762268883400F237A6 /* UILabel+MSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+MSExtension.h"; sourceTree = "<group>"; };
 		5A6199772268883400F237A6 /* UILabel+MSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MSExtension.m"; sourceTree = "<group>"; };
+		5A762EC1226D9B1E004F6BC4 /* SampleXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleXib.xib; sourceTree = "<group>"; };
+		5A762EC3226DB160004F6BC4 /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
+		5A762EC6226DC2AD004F6BC4 /* Shop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		5A762EC7226DC2AD004F6BC4 /* Shop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		5A762EC9226DC814004F6BC4 /* dogs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = dogs.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,8 @@
 		5A61993C2268261B00F237A6 /* ApplePracticeApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5A762EC5226DC295004F6BC4 /* 模型 */,
+				5A762EBE226D987E004F6BC4 /* 其它 */,
 				5A61996F2268841C00F237A6 /* 扩展 */,
 				5A61995A226872B900F237A6 /* 四个子页面 */,
 				5A6199562268521100F237A6 /* 导航栏 */,
@@ -95,7 +106,9 @@
 				5A6199462268261C00F237A6 /* Assets.xcassets */,
 				5A6199482268261C00F237A6 /* LaunchScreen.storyboard */,
 				5A61994B2268261C00F237A6 /* Info.plist */,
+				5A762EC3226DB160004F6BC4 /* shops.plist */,
 				5A61994C2268261C00F237A6 /* main.m */,
+				5A762EC9226DC814004F6BC4 /* dogs.plist */,
 			);
 			path = ApplePracticeApplication;
 			sourceTree = "<group>";
@@ -135,6 +148,23 @@
 				5A6199772268883400F237A6 /* UILabel+MSExtension.m */,
 			);
 			path = "扩展";
+			sourceTree = "<group>";
+		};
+		5A762EBE226D987E004F6BC4 /* 其它 */ = {
+			isa = PBXGroup;
+			children = (
+				5A762EC1226D9B1E004F6BC4 /* SampleXib.xib */,
+			);
+			path = "其它";
+			sourceTree = "<group>";
+		};
+		5A762EC5226DC295004F6BC4 /* 模型 */ = {
+			isa = PBXGroup;
+			children = (
+				5A762EC6226DC2AD004F6BC4 /* Shop.h */,
+				5A762EC7226DC2AD004F6BC4 /* Shop.m */,
+			);
+			path = "模型";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +226,10 @@
 			files = (
 				5A61994A2268261C00F237A6 /* LaunchScreen.storyboard in Resources */,
 				5A6199472268261C00F237A6 /* Assets.xcassets in Resources */,
+				5A762EC4226DB160004F6BC4 /* shops.plist in Resources */,
 				5A6199692268732A00F237A6 /* ThirdViewController.xib in Resources */,
+				5A762EC2226D9B1E004F6BC4 /* SampleXib.xib in Resources */,
+				5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */,
 				5A6199452268261B00F237A6 /* Main.storyboard in Resources */,
 				5A61996E2268734200F237A6 /* FourthViewController.xib in Resources */,
 				5A61995F226872E600F237A6 /* FirstViewController.xib in Resources */,
@@ -216,6 +249,7 @@
 				5A6199422268261B00F237A6 /* ViewController.m in Sources */,
 				5A61994D2268261C00F237A6 /* main.m in Sources */,
 				5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */,
+				5A762EC8226DC2AD004F6BC4 /* Shop.m in Sources */,
 				5A61995E226872E600F237A6 /* FirstViewController.m in Sources */,
 				5A61993F2268261B00F237A6 /* AppDelegate.m in Sources */,
 				5A6199592268525400F237A6 /* MSNavigationController.m in Sources */,

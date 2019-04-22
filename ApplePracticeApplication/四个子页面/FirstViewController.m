@@ -12,11 +12,16 @@
 @property (strong, nonatomic) IBOutlet UILabel *msLabel;
 @property (strong, nonatomic) IBOutlet UIButton *changeLabelBtn;
 @property (strong, nonatomic) IBOutlet UIButton *myBtn;
-
+@property (nonatomic,strong) NSArray *dogs;//小狗数组
 @end
 
 @implementation FirstViewController
-
+- (NSArray *)dogs{
+    if (_dogs==nil) {
+        _dogs = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"dogs" ofType:@"plist"]];
+    }
+    return _dogs;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -111,4 +116,31 @@
     //9.当showsTouchWhenHighlighted设置为yes的状态下，按钮按下会发光
 //    self.myBtn.showsTouchWhenHighlighted = YES;
 }
+
+//通过xib创建、加载view
+- (IBAction)loadFromXib:(id)sender {
+    //第一种加载方式
+    NSArray *view = [[NSBundle mainBundle] loadNibNamed:@"SampleXib" owner:nil options:nil];
+    //第二种加载方式
+    UINib *nib = [UINib nibWithNibName:@"SampleXib" bundle:nil];
+    NSArray *views = [nib instantiateWithOwner:nil options:nil];
+    
+    //添加到view
+//    [self.view addSubview:[view lastObject]];
+}
+
+#pragma mark - 加载plist文件并且读取内容
+- (IBAction)loadPlistBtn:(id)sender {
+    //获取bundle
+    NSBundle *bundle = [NSBundle mainBundle];
+    //获取plist地址
+    NSString *path = [bundle pathForResource:@"shops" ofType:@"plist"];
+    //加载plist文件
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    
+    for (NSDictionary *dic in self.dogs) {
+        NSLog(@"%@----%@",dic[@"name"],dic[@"icon"]);
+    }
+}
+
 @end
