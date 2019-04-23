@@ -8,20 +8,34 @@
 
 #import "FirstViewController.h"
 #import "UILabel+MSExtension.h"
+#import "Shop.h"
 @interface FirstViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *msLabel;
 @property (strong, nonatomic) IBOutlet UIButton *changeLabelBtn;
 @property (strong, nonatomic) IBOutlet UIButton *myBtn;
-@property (nonatomic,strong) NSArray *dogs;//小狗数组
+@property (nonatomic,strong) NSArray *shops;//商品数组
 @end
 
 @implementation FirstViewController
-- (NSArray *)dogs{
-    if (_dogs==nil) {
-        _dogs = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"dogs" ofType:@"plist"]];
+//- (NSArray *)shops{
+//    if (_shops==nil) {
+//        _shops = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"shops" ofType:@"plist"]];
+//    }
+//    return _shops;
+//}
+- (NSArray *)shops{
+    if (_shops==nil) {
+        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"shops" ofType:@"plist"]];
+        NSMutableArray *shopArray = [NSMutableArray array];
+        for (NSDictionary *dict in dictArray) {
+            Shop *shop = [Shop shopWithDict:dict];
+            [shopArray addObject:shop];
+        }
+        _shops = shopArray;
     }
-    return _dogs;
+    return _shops;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -131,15 +145,20 @@
 
 #pragma mark - 加载plist文件并且读取内容
 - (IBAction)loadPlistBtn:(id)sender {
-    //获取bundle
-    NSBundle *bundle = [NSBundle mainBundle];
-    //获取plist地址
-    NSString *path = [bundle pathForResource:@"shops" ofType:@"plist"];
-    //加载plist文件
-    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+//    //获取bundle
+//    NSBundle *bundle = [NSBundle mainBundle];
+//    //获取plist地址
+//    NSString *path = [bundle pathForResource:@"shops" ofType:@"plist"];
+//    //加载plist文件
+//    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+//
+//    for (NSDictionary *dic in self.shops) {
+//        NSLog(@"%@----%@",dic[@"name"],dic[@"icon"]);
+//    }
     
-    for (NSDictionary *dic in self.dogs) {
-        NSLog(@"%@----%@",dic[@"name"],dic[@"icon"]);
+    for (int i=0;i<self.shops.count;i++) {
+        Shop *shop = self.shops[i];
+        NSLog(@"%@----%@",shop.name,shop.icon);
     }
 }
 
