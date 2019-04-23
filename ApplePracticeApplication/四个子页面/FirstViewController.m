@@ -140,7 +140,7 @@
     NSArray *views = [nib instantiateWithOwner:nil options:nil];
     
     //添加到view
-//    [self.view addSubview:[view lastObject]];
+    [self.view addSubview:[view lastObject]];
 }
 
 #pragma mark - 加载plist文件并且读取内容
