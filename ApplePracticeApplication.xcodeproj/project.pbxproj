@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A218E512270118E00895661 /* MSPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A218E502270118E00895661 /* MSPageView.m */; };
+		5A218E53227011A500895661 /* MSPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A218E52227011A500895661 /* MSPageView.xib */; };
 		5A61993F2268261B00F237A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A61993E2268261B00F237A6 /* AppDelegate.m */; };
 		5A6199422268261B00F237A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6199412268261B00F237A6 /* ViewController.m */; };
 		5A6199452268261B00F237A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6199432268261B00F237A6 /* Main.storyboard */; };
@@ -30,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A218E4F2270118E00895661 /* MSPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPageView.h; sourceTree = "<group>"; };
+		5A218E502270118E00895661 /* MSPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSPageView.m; sourceTree = "<group>"; };
+		5A218E52227011A500895661 /* MSPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSPageView.xib; sourceTree = "<group>"; };
 		5A61993A2268261B00F237A6 /* ApplePracticeApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePracticeApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A61993D2268261B00F237A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A61993E2268261B00F237A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A218E4E2270111600895661 /* 自定义View */ = {
+			isa = PBXGroup;
+			children = (
+				5A218E4F2270118E00895661 /* MSPageView.h */,
+				5A218E502270118E00895661 /* MSPageView.m */,
+				5A218E52227011A500895661 /* MSPageView.xib */,
+			);
+			path = "自定义View";
+			sourceTree = "<group>";
+		};
 		5A6199312268261B00F237A6 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +108,7 @@
 		5A61993C2268261B00F237A6 /* ApplePracticeApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5A218E4E2270111600895661 /* 自定义View */,
 				5A762EC5226DC295004F6BC4 /* 模型 */,
 				5A762EBE226D987E004F6BC4 /* 其它 */,
 				5A61996F2268841C00F237A6 /* 扩展 */,
@@ -232,6 +248,7 @@
 				5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */,
 				5A6199452268261B00F237A6 /* Main.storyboard in Resources */,
 				5A61996E2268734200F237A6 /* FourthViewController.xib in Resources */,
+				5A218E53227011A500895661 /* MSPageView.xib in Resources */,
 				5A61995F226872E600F237A6 /* FirstViewController.xib in Resources */,
 				5A6199642268731400F237A6 /* SecondViewController.xib in Resources */,
 			);
@@ -250,6 +267,7 @@
 				5A61994D2268261C00F237A6 /* main.m in Sources */,
 				5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */,
 				5A762EC8226DC2AD004F6BC4 /* Shop.m in Sources */,
+				5A218E512270118E00895661 /* MSPageView.m in Sources */,
 				5A61995E226872E600F237A6 /* FirstViewController.m in Sources */,
 				5A61993F2268261B00F237A6 /* AppDelegate.m in Sources */,
 				5A6199592268525400F237A6 /* MSNavigationController.m in Sources */,

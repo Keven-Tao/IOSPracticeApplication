@@ -7,12 +7,14 @@
 //
 
 #import "SecondViewController.h"
+#import "MSPageView.h"
 /**
  * 使用scrollview的时候必须要实现UIScrollViewDelegate
  */
 @interface SecondViewController ()<UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
 @property (nonatomic,strong) UIImageView *imageView;
+@property (strong, nonatomic) MSPageView *pageView;
 @end
 
 @implementation SecondViewController
@@ -40,7 +42,15 @@
     _myScrollView.contentInset = UIEdgeInsetsMake(40, 40, 10, 10);
     
     //设置scrollview移动到某个坐标（左上角为原点）
-    _myScrollView.contentOffset = CGPointMake(-100, -100);
+//    _myScrollView.contentOffset = CGPointMake(-100, -100);
+    
+    MSPageView *pageView = [MSPageView pageView];
+    pageView.frame = CGRectMake(37, 400, 300, 130);
+    pageView.imageNames = @[@"img_00", @"img_01", @"img_02", @"img_03", @"img_04"];
+    pageView.otherColor = [UIColor grayColor];
+    pageView.currentColor = [UIColor orangeColor];
+    [self.view addSubview:pageView];
+    self.pageView = pageView;
 }
 
 #pragma mark - *****缩放需要实现下面的方法（不实现无法完成缩放）
