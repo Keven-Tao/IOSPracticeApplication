@@ -166,6 +166,6 @@
     CGPoint offset = self.scrollView.contentOffset;
     offset.x = page * self.scrollView.frame.size.width;
     [self.scrollView setContentOffset:offset animated:YES];   // animate at constant velocity to new offset
-    NSLog(@"nextPage");
+//    NSLog(@"nextPage");
 }
 @end

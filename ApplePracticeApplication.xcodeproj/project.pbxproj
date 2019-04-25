@@ -29,6 +29,8 @@
 		5A762EC4226DB160004F6BC4 /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A762EC3226DB160004F6BC4 /* shops.plist */; };
 		5A762EC8226DC2AD004F6BC4 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A762EC7226DC2AD004F6BC4 /* Shop.m */; };
 		5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A762EC9226DC814004F6BC4 /* dogs.plist */; };
+		5A834F792271C38200993727 /* heroes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A834F782271C38100993727 /* heroes.plist */; };
+		5A834F7C2271C3B100993727 /* MSHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A834F7B2271C3B100993727 /* MSHero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,9 @@
 		5A762EC6226DC2AD004F6BC4 /* Shop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
 		5A762EC7226DC2AD004F6BC4 /* Shop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 		5A762EC9226DC814004F6BC4 /* dogs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = dogs.plist; sourceTree = "<group>"; };
+		5A834F782271C38100993727 /* heroes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heroes.plist; sourceTree = "<group>"; };
+		5A834F7A2271C3B100993727 /* MSHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHero.h; sourceTree = "<group>"; };
+		5A834F7B2271C3B100993727 /* MSHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,7 @@
 				5A6199482268261C00F237A6 /* LaunchScreen.storyboard */,
 				5A61994B2268261C00F237A6 /* Info.plist */,
 				5A762EC3226DB160004F6BC4 /* shops.plist */,
+				5A834F782271C38100993727 /* heroes.plist */,
 				5A61994C2268261C00F237A6 /* main.m */,
 				5A762EC9226DC814004F6BC4 /* dogs.plist */,
 			);
@@ -179,6 +185,8 @@
 			children = (
 				5A762EC6226DC2AD004F6BC4 /* Shop.h */,
 				5A762EC7226DC2AD004F6BC4 /* Shop.m */,
+				5A834F7A2271C3B100993727 /* MSHero.h */,
+				5A834F7B2271C3B100993727 /* MSHero.m */,
 			);
 			path = "模型";
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 				5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */,
 				5A6199452268261B00F237A6 /* Main.storyboard in Resources */,
 				5A61996E2268734200F237A6 /* FourthViewController.xib in Resources */,
+				5A834F792271C38200993727 /* heroes.plist in Resources */,
 				5A218E53227011A500895661 /* MSPageView.xib in Resources */,
 				5A61995F226872E600F237A6 /* FirstViewController.xib in Resources */,
 				5A6199642268731400F237A6 /* SecondViewController.xib in Resources */,
@@ -266,6 +275,7 @@
 				5A6199422268261B00F237A6 /* ViewController.m in Sources */,
 				5A61994D2268261C00F237A6 /* main.m in Sources */,
 				5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */,
+				5A834F7C2271C3B100993727 /* MSHero.m in Sources */,
 				5A762EC8226DC2AD004F6BC4 /* Shop.m in Sources */,
 				5A218E512270118E00895661 /* MSPageView.m in Sources */,
 				5A61995E226872E600F237A6 /* FirstViewController.m in Sources */,
