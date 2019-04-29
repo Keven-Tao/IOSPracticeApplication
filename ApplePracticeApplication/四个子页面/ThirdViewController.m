@@ -60,7 +60,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    static NSString *identifier = @"heros";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+    }
     
     MSHero *hero = self.heroes[indexPath.row];
     

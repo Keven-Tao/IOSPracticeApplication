@@ -7,7 +7,7 @@
 //
 
 #import "FourthViewController.h"
-
+#import "DealViewController.h"
 @interface FourthViewController ()
 
 @end
@@ -29,4 +29,10 @@
 }
 */
 
+- (IBAction)startToDealControll:(id)sender {
+    DealViewController *vc = [[DealViewController alloc] initWithNibName:NSStringFromClass([DealViewController class]) bundle:[NSBundle mainBundle]];
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+}
 @end

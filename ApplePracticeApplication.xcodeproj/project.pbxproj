@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0AFECB22754A25001707D7 /* DealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0AFEC922754A25001707D7 /* DealCell.m */; };
+		5A0AFECC22754A25001707D7 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0AFECA22754A25001707D7 /* DealCell.xib */; };
+		5A0AFECF22754D89001707D7 /* MSDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0AFECE22754D89001707D7 /* MSDeal.m */; };
+		5A0AFED12275507A001707D7 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A0AFED02275507A001707D7 /* deals.plist */; };
 		5A218E512270118E00895661 /* MSPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A218E502270118E00895661 /* MSPageView.m */; };
 		5A218E53227011A500895661 /* MSPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A218E52227011A500895661 /* MSPageView.xib */; };
 		5A61993F2268261B00F237A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A61993E2268261B00F237A6 /* AppDelegate.m */; };
@@ -31,9 +35,17 @@
 		5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A762EC9226DC814004F6BC4 /* dogs.plist */; };
 		5A834F792271C38200993727 /* heroes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A834F782271C38100993727 /* heroes.plist */; };
 		5A834F7C2271C3B100993727 /* MSHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A834F7B2271C3B100993727 /* MSHero.m */; };
+		5AEF07022273132B00FFFB32 /* DealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF07002273132B00FFFB32 /* DealViewController.m */; };
+		5AEF07032273132B00FFFB32 /* DealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF07012273132B00FFFB32 /* DealViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0AFEC822754A25001707D7 /* DealCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DealCell.h; sourceTree = "<group>"; };
+		5A0AFEC922754A25001707D7 /* DealCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealCell.m; sourceTree = "<group>"; };
+		5A0AFECA22754A25001707D7 /* DealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
+		5A0AFECD22754D89001707D7 /* MSDeal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDeal.h; sourceTree = "<group>"; };
+		5A0AFECE22754D89001707D7 /* MSDeal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDeal.m; sourceTree = "<group>"; };
+		5A0AFED02275507A001707D7 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
 		5A218E4F2270118E00895661 /* MSPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPageView.h; sourceTree = "<group>"; };
 		5A218E502270118E00895661 /* MSPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSPageView.m; sourceTree = "<group>"; };
 		5A218E52227011A500895661 /* MSPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSPageView.xib; sourceTree = "<group>"; };
@@ -71,6 +83,9 @@
 		5A834F782271C38100993727 /* heroes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heroes.plist; sourceTree = "<group>"; };
 		5A834F7A2271C3B100993727 /* MSHero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSHero.h; sourceTree = "<group>"; };
 		5A834F7B2271C3B100993727 /* MSHero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSHero.m; sourceTree = "<group>"; };
+		5AEF06FF2273132B00FFFB32 /* DealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DealViewController.h; sourceTree = "<group>"; };
+		5AEF07002273132B00FFFB32 /* DealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealViewController.m; sourceTree = "<group>"; };
+		5AEF07012273132B00FFFB32 /* DealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +128,7 @@
 		5A61993C2268261B00F237A6 /* ApplePracticeApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5AEF06FE227312D400FFFB32 /* UITableView学习 */,
 				5A218E4E2270111600895661 /* 自定义View */,
 				5A762EC5226DC295004F6BC4 /* 模型 */,
 				5A762EBE226D987E004F6BC4 /* 其它 */,
@@ -128,6 +144,7 @@
 				5A6199482268261C00F237A6 /* LaunchScreen.storyboard */,
 				5A61994B2268261C00F237A6 /* Info.plist */,
 				5A762EC3226DB160004F6BC4 /* shops.plist */,
+				5A0AFED02275507A001707D7 /* deals.plist */,
 				5A834F782271C38100993727 /* heroes.plist */,
 				5A61994C2268261C00F237A6 /* main.m */,
 				5A762EC9226DC814004F6BC4 /* dogs.plist */,
@@ -191,6 +208,21 @@
 			path = "模型";
 			sourceTree = "<group>";
 		};
+		5AEF06FE227312D400FFFB32 /* UITableView学习 */ = {
+			isa = PBXGroup;
+			children = (
+				5AEF06FF2273132B00FFFB32 /* DealViewController.h */,
+				5AEF07002273132B00FFFB32 /* DealViewController.m */,
+				5AEF07012273132B00FFFB32 /* DealViewController.xib */,
+				5A0AFEC822754A25001707D7 /* DealCell.h */,
+				5A0AFEC922754A25001707D7 /* DealCell.m */,
+				5A0AFECA22754A25001707D7 /* DealCell.xib */,
+				5A0AFECD22754D89001707D7 /* MSDeal.h */,
+				5A0AFECE22754D89001707D7 /* MSDeal.m */,
+			);
+			path = "UITableView学习";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +283,7 @@
 				5A61994A2268261C00F237A6 /* LaunchScreen.storyboard in Resources */,
 				5A6199472268261C00F237A6 /* Assets.xcassets in Resources */,
 				5A762EC4226DB160004F6BC4 /* shops.plist in Resources */,
+				5AEF07032273132B00FFFB32 /* DealViewController.xib in Resources */,
 				5A6199692268732A00F237A6 /* ThirdViewController.xib in Resources */,
 				5A762EC2226D9B1E004F6BC4 /* SampleXib.xib in Resources */,
 				5A762ECA226DC814004F6BC4 /* dogs.plist in Resources */,
@@ -258,8 +291,10 @@
 				5A61996E2268734200F237A6 /* FourthViewController.xib in Resources */,
 				5A834F792271C38200993727 /* heroes.plist in Resources */,
 				5A218E53227011A500895661 /* MSPageView.xib in Resources */,
+				5A0AFED12275507A001707D7 /* deals.plist in Resources */,
 				5A61995F226872E600F237A6 /* FirstViewController.xib in Resources */,
 				5A6199642268731400F237A6 /* SecondViewController.xib in Resources */,
+				5A0AFECC22754A25001707D7 /* DealCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +306,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A61996D2268734200F237A6 /* FourthViewController.m in Sources */,
+				5AEF07022273132B00FFFB32 /* DealViewController.m in Sources */,
 				5A6199632268731400F237A6 /* SecondViewController.m in Sources */,
 				5A6199422268261B00F237A6 /* ViewController.m in Sources */,
 				5A61994D2268261C00F237A6 /* main.m in Sources */,
+				5A0AFECB22754A25001707D7 /* DealCell.m in Sources */,
 				5A6199782268883400F237A6 /* UILabel+MSExtension.m in Sources */,
 				5A834F7C2271C3B100993727 /* MSHero.m in Sources */,
 				5A762EC8226DC2AD004F6BC4 /* Shop.m in Sources */,
 				5A218E512270118E00895661 /* MSPageView.m in Sources */,
 				5A61995E226872E600F237A6 /* FirstViewController.m in Sources */,
 				5A61993F2268261B00F237A6 /* AppDelegate.m in Sources */,
+				5A0AFECF22754D89001707D7 /* MSDeal.m in Sources */,
 				5A6199592268525400F237A6 /* MSNavigationController.m in Sources */,
 				5A6199682268732A00F237A6 /* ThirdViewController.m in Sources */,
 			);
