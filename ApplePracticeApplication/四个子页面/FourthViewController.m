@@ -30,7 +30,7 @@
 */
 
 - (IBAction)startToDealControll:(id)sender {
-    DealViewController *vc = [[DealViewController alloc] initWithNibName:NSStringFromClass([DealViewController class]) bundle:[NSBundle mainBundle]];
+    DealViewController *vc = [[DealViewController alloc] init];
     [self presentViewController:vc animated:YES completion:^{
         
     }];
